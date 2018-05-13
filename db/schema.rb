@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180513094610) do
+=======
+ActiveRecord::Schema.define(version: 20180513092729) do
+>>>>>>> 7e729c132e04b49a7804974f0d6089568f5169f2
 
   create_table "models", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -50,7 +54,10 @@ ActiveRecord::Schema.define(version: 20180513094610) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+<<<<<<< HEAD
     t.integer "movie_id"
+=======
+>>>>>>> 7e729c132e04b49a7804974f0d6089568f5169f2
   end
 
   create_table "users", force: :cascade do |t|

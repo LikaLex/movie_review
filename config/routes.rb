@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
 
-=======
   resources :reviews
->>>>>>> 7e729c132e04b49a7804974f0d6089568f5169f2
+
   devise_for :users
   devise_for :models
   resources :movies do
+    collection do
+      get 'search'
+    end
     resources :reviews, except: [:show, :index]
   end
 
